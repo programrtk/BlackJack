@@ -16,15 +16,31 @@ public abstract class Card
 	private int face;
 
   	//constructors
-
+        public Card(){
+            suit = "ZERO";
+            face = 1;
+        }
 
 
 	// modifiers
-
+        public void setSuit(String suitsetter){
+            suit = suitsetter;
+        }
+        
+        public void setFace(int faceSetter){
+            face = faceSetter;
+        }
 
  
 
   	//accessors
+        public String getSuit(){
+            return suit;
+        }
+        
+        public int getFace(){
+            return face;
+        }
 
 
 
@@ -41,5 +57,9 @@ public abstract class Card
 	}
 
   	//toString
+        public String toString(){
+            return face+""+suit;
+        }
+        
   	
  }
