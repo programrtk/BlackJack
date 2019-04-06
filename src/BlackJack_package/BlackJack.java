@@ -12,11 +12,16 @@ import java.util.Scanner;
 public class BlackJack
 {
 	//add in Player instance variable
+        private Dealer dealer;
 	//add in Dealer instance variable
-
+        private Player player;
+        
+        
 	public BlackJack()
 	{
-
+        dealer = new Dealer();
+        player = new Player();
+        boolean start = true;
 
 	}
 
@@ -25,7 +30,9 @@ public class BlackJack
 		Scanner keyboard = new Scanner(System.in);
 		char choice = 0;
 
-
+                if(start){
+                    start;
+                }
 
 
 

@@ -8,33 +8,42 @@ package BlackJack_package;
 
 
 //define Dealer class here
-	
-	
-	
-	
-	//instance variable - Deck 
-
+public class Dealer extends AbstractPlayer {
+    
+    
+        //instance variable - Deck 
+        
+        private Deck deckOfCards;
 
 
 
 
 	//constructors
-
+           public Dealer(){
+               deckOfCards = new Deck();
+           }
 
 
 
 
 	//method to shuffle
 
-
+           public void shuffle(){
+               deckOfCards.shuffle();
+           }
 
 
 
 
 	//method to deal a card
-
-
+           public Card deal(){
+               
+           }
 
 
 
 	//hit method goes here
+          public boolean hit(){
+              return true;
+          }
+}
