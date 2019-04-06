@@ -58,7 +58,7 @@ public abstract class Card
 
   	//toString
         public String toString(){
-            return face+""+suit;
+            return FACES[face] + " of " + getSuit() + " | value = " + getValue();
         }
         
   	

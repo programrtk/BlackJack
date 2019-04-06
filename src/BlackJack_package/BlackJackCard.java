@@ -9,7 +9,10 @@ package BlackJack_package;
 public class BlackJackCard extends Card
 {
   	//constructors
-
+    
+        public BlackJackCard(int num, String suit){
+            super(num, suit);
+        }
 
 
   	public int getValue()
@@ -18,7 +21,7 @@ public class BlackJackCard extends Card
   		//this makes writing the whole program a little easier
 
 
-		return 0;
+		return getFace();
   	}
   	
  }
